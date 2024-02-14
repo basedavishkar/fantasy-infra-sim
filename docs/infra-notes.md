@@ -1,0 +1,4 @@
+- Auth service → FastAPI
+- Payments via Razorpay, maybe Cashfree fallback?
+- KYC: OCR + PAN check, Aadhar eSign?
+- Match ingestion every 1 min via cron job
