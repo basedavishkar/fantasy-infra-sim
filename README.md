@@ -5,3 +5,5 @@ Real-money use case, async Python microservices, payments, match ingestion, the 
 doc goals - clarity/documention
 
 product goal - fast migration for now
+
+HMM PERSONAL GOAL:: Document every new learning curve
