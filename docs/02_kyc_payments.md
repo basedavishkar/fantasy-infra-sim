@@ -13,3 +13,9 @@
 - log txn_id + status → audit table
 
 // todo: maybe build a /kyc/status endpoint for support team?
+
+
+---
+
+### Mermaid Flow Draft
+
