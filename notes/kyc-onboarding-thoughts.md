@@ -1,0 +1,4 @@
+- onboarding funnel = email → phone → pan card → selfie → bank link → verify
+- dev note: cashfree payout onboarding flow is shit, might swap for razorpayX
+- add webhook for retry logic on verification
+- hmm: what if we use dynamo just for idempotency keys?
