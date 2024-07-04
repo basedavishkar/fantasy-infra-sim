@@ -1,0 +1,4 @@
+- bug in contest lock timing — wallet was deducting before match start
+- if scoring delayed >5s, multiple refunds triggered
+- 1.2L INR refunded incorrectly
+- fixed in prod with patch, but infra needs queue-based locking
