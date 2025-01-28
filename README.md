@@ -1,20 +1,25 @@
-# Fantasy Infra Sim
+# fantasy-infra-sim
 
-Simulation of backend infrastructure designed for real-money fantasy sports platforms.
+infra + service notes from a real-money fantasy sports backend I helped build between Jan 2024 – mid 2025.
 
-> NOTE: This repo is not actively maintained. Code is partial. Architecture + domain logic preserved for reference.
+this isn’t prod code — just internal documentation and scattered brain dumps.
 
-## Modules
+## what's here
 
-- KYC + onboarding
-- Wallet + contest locking
-- Match ingestion + scoring
-- Payments + reconciliation
-- Infra: ECS, S3, RDS, Terraform
+- `docs/`: flow diagrams, service notes, infra sketches
+- `services/`: auth, wallet, scoring — rough service summaries
+- `infra/`: terraform stubs (never finished, lol)
+- `postmortem.md`: the 1.2L refund incident 💀
+- `experiments/`: abandoned leaderboard refactor
+- `adr/`: fake-but-real ADRs for infra structure
 
-## Why this exists
+## why this exists
 
-Built during a freelance contract across 2024. Infra handled 1M+ wallet tx/day at peak.
+trying to open-source parts of my infra work (under NDA) in a sanitized way  
+for blog posts, future projects, or just to remember what I did.
 
-This repo simulates structure + decision logic used in prod, not complete code.
+none of this is runnable — it’s vibes + system-level storytelling.
 
+---
+
+*Jan: Planning to turn this into a youtube/twitter video.*
