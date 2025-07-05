@@ -1,37 +1,55 @@
 # fantasy-infra-sim
 
-Simulated backend infra and service notes for a real-money fantasy sports app (Jan 2024 – June 2025). This repo documents the architecture, service boundaries, and ops patterns used in production, but all code and configs here are sanitized or illustrative only.
+Simulation of core backend infrastructure for a real-money fantasy sports app, developed and maintained between Jan 2024 and Jun 2025. This repo serves as internal documentation for the system’s architecture, service boundaries, and ops workflows. Code and configs are illustrative or redacted.
 
-## System Overview
-
-- **API & Services:** FastAPI microservices (auth, wallet, scoring, payments)
-- **Infra:** AWS ECS Fargate for container orchestration, Terraform for IaC
-- **Data:** PostgreSQL (RDS) for core data, S3 for snapshots, Redis for cache/pubsub
-- **Async:** Celery for background jobs (scoring, payouts)
-- **Payments:** Razorpay (primary), Cashfree (fallback)
-- **KYC:** PAN/Aadhaar checks, manual review fallback
-- **Ops:** GitHub Actions for deploys, basic cron for scheduled jobs
-
-## Folder Structure
-
-- `docs/` — Architecture diagrams, flow notes, service/integration docs
-- `services/` — Service-level notes for auth, wallet, scoring, payments
-- `infra/` — Terraform stubs and infra planning
-- `adr/` — Architecture decision records (ADRs)
-- `cron/` — Notes on scheduled jobs and cron logic
-- `experiments/` — Abandoned or experimental refactors
-- `notes/` — Miscellaneous design and onboarding thoughts
-- `postmortem.md` — Incident writeups and lessons learned
-
-## Limitations
-
-- No runnable code or deployable infra — this is documentation and architecture only
-- Not production-ready, not a template — for reference and internal knowledge sharing
-- Some details are redacted or simulated for NDA reasons
-
-## References
-
-- [System Architecture](docs/architecture.md)
-- [Postmortem: 1.2L Refund Incident](postmortem.md)
+> This is not a runnable project — it’s a simulated reconstruction of the real infra used during consulting work for a fantasy sports client.
 
 ---
+
+## 🧠 Overview
+
+- **Services:** FastAPI microservices for Auth, Wallet, Scoring, Payments, KYC
+- **Infra:** AWS ECS (Fargate), Terraform (stubs), GitHub Actions, Redis, S3
+- **Data:** PostgreSQL (core), Redis (cache/pubsub), S3 (match snapshots)
+- **Async:** Celery for scoring, payouts, webhook handling
+- **Payments:** Razorpay (primary), Cashfree (fallback)
+- **KYC:** PAN OCR, Aadhaar eSign, fallback to selfie + manual review
+
+---
+
+## 📁 Structure
+
+| Folder            | Purpose                                                    |
+|-------------------|------------------------------------------------------------|
+| `docs/`           | Architecture diagrams, flows, system notes                 |
+| `services/`       | Per-service readmes (auth, wallet, scoring, etc.)          |
+| `infra/terraform/`| Infra planning stubs (networking, services, storage)       |
+| `cron/`           | Notes on cron jobs (e.g., match ingestion)                 |
+| `adr/`            | Architecture Decision Records (bootstrap + tradeoffs)      |
+| `experiments/`    | Abandoned or in-progress ideas                             |
+| `notes/`          | Raw notes from dev onboarding, edge cases, and flows       |
+| `postmortem.md`   | War stories and incident reports (e.g., accidental refunds)|
+
+---
+
+## 🧪 Simulation Constraints
+
+- ❌ No code, no deployable infra
+- ✅ Service boundaries, flows, edge case notes
+- 🔒 Some sections anonymized or redacted (NDA context)
+- 🧾 All infra and service files were written during/after active work
+
+---
+
+## 🧭 Start Here
+
+- [`docs/architecture.md`](docs/architecture.md) — System architecture sketch (mermaid)
+- [`postmortem.md`](postmortem.md) — Incident writeups from production bugs
+- [`docs/02_kyc_payments.md`](docs/02_kyc_payments.md) — KYC + Payments integration notes
+
+---
+
+## 🙋🏻‍♂️ Why This Exists
+
+I worked as an infra/backend consultant on a real-money fantasy sports product between Jan 2024 and Jun 2025. The actual code is proprietary, but this repo simulates the infra, notes, and service thinking behind that work — cleaned up just enough for open-source.
+
