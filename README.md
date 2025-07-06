@@ -2,7 +2,7 @@
 
 Simulation of core backend infrastructure for a real-money fantasy sports app, developed and maintained between Jan 2024 and Jun 2025. This repo serves as internal documentation for the system’s architecture, service boundaries, and ops workflows. Code and configs are illustrative or redacted.
 
-> This is not a runnable project — it’s a simulated reconstruction of the real infra used during consulting work for a fantasy sports client.
+> This repo simulates a backend infra system I designed while consulting on a real-money fantasy platform.
 
 ---
 
@@ -36,7 +36,7 @@ Simulation of core backend infrastructure for a real-money fantasy sports app, d
 
 - ❌ No code, no deployable infra
 - ✅ Service boundaries, flows, edge case notes
-- 🔒 Some sections anonymized or redacted (NDA context)
+- 🔒 Some sections anonymized or redacted (client context)
 - 🧾 All infra and service files were written during/after active work
 
 ---
@@ -53,3 +53,6 @@ Simulation of core backend infrastructure for a real-money fantasy sports app, d
 
 I worked as an infra/backend consultant on a real-money fantasy sports product between Jan 2024 and Jun 2025. The actual code is proprietary, but this repo simulates the infra, notes, and service thinking behind that work — cleaned up just enough for open-source.
 
+---
+
+📝 Disclaimer: This repository is a self-authored simulation for demonstration purposes only. It does not contain proprietary client code or data.
